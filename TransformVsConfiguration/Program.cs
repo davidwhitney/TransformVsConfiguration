@@ -25,6 +25,8 @@ namespace TransformVsConfiguration
                 return;
             }
 
+            EnsureDestinationIsCreated(_destinationPathAndFilename);
+
             var task = new TransformXml
                            {
                                Source = new TaskItem(_sourcePathAndFilename),
@@ -35,6 +37,15 @@ namespace TransformVsConfiguration
                            };
 
             task.Execute();
+        }
+
+        private static void EnsureDestinationIsCreated(string destinationPathAndFilename)
+        {
+            var directory = Path.GetDirectoryName(destinationPathAndFilename);
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
         }
 
         private static OptionSet LoadCommandLineArguments(IEnumerable<string> args)

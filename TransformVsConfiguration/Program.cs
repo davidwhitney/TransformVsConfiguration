@@ -44,7 +44,7 @@ namespace TransformVsConfiguration
                                     {"h|?|help|man", "Display help message", param => _showHelp = param != null },
                                     {"source=", "Source path and file name of .config file", param => _sourcePathAndFilename = param },
                                     {"destination=", "Output path and filename", param => _destinationPathAndFilename = param},
-                                    {"transform", "VS2010 transformation file", param => _transformPathAndFilename = param },
+                                    {"transform=", "VS2010 transformation file", param => _transformPathAndFilename = param },
                                 };
             optionSet.Parse(args);
             return optionSet;

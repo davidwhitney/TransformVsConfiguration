@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>$id$.CommandLine</id>
-    <version>$version$</version>
+    <id>TransformVsConfiguration.CommandLine</id>
+    <version>1.1.0.0</version>
     <authors>David Whitney</authors>
     <owners>David Whitney</owners>
     <projectUrl>https://github.com/davidwhitney/TransformVsConfiguration</projectUrl>
@@ -13,8 +13,8 @@
     <tags>web.config app.config transform *.config command-line config-transform release debug</tags>    
   </metadata>
   <files>
-      <file src="\bin\Release\TransformVsConfiguration.exe" target="lib" />
-      <file src="bin\Release\NDesk.Options.dll" target="lib" />
-      <file src="bin\Release\Microsoft.Web.Publishing.Tasks.dll" target="lib" />
+      <file src="bin\Release\TransformVsConfiguration.exe" target="" />
+      <file src="bin\Release\NDesk.Options.dll" target="" />
+      <file src="bin\Release\Microsoft.Web.Publishing.Tasks.dll" target="" />
     </files> 
 </package>

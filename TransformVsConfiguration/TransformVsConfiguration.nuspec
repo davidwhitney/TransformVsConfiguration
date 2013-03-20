@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>$id$.CommandLine</id>
+    <version>$version$</version>
+    <authors>David Whitney</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/JustGiving/GG.FeatureConfiguration</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Transform web.config and app.config (or any *.config!) files from the command line.</description>
+	<releaseNotes>Command line tool added to NuGet</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>web.config app.config transform *.config command-line config-transform release debug</tags>    
+  </metadata>
+  <files>
+      <file src="\bin\Release\TransformVsConfiguration.exe" target="lib" />
+      <file src="bin\Release\NDesk.Options.dll" target="lib" />
+      <file src="bin\Release\Microsoft.Web.Publishing.Tasks.dll" target="lib" />
+    </files> 
+</package>
